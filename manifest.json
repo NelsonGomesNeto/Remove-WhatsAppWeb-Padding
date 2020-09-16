@@ -1,0 +1,13 @@
+{
+  "name": "Remove WhatsApp Web Padding",
+  "version": "0.1",
+  "description": "Remove WhatsApp Web Padding",
+  "permissions": ["tabs"],
+  "content_scripts": [
+    {
+      "matches": ["*://web.whatsapp.com/*"],
+      "js": ["fixPadding.js"]
+    }
+  ],
+  "manifest_version": 2
+}
